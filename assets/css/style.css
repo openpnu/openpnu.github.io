@@ -6,6 +6,7 @@ body {
 }
 
 .title {
+    width: 0%;
     color: #212121;
     font-size: 4em;
     font-weight: bold;
@@ -30,7 +31,7 @@ body {
     animation-iteration-count: 1, 1, 1, infinite;
     animation-direction: normal, normal, normal, normal;
     animation-timing-function: steps(4), linear, steps(3), linear;
-    animation-fill-mode: none, none, none;
+    animation-fill-mode: none, none, forwards;
 }
 
 @keyframes typewriter-head {
