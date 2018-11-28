@@ -66,7 +66,7 @@ body {
     animation-fill-mode: none, none, forwards;
 }
 
-p. tineysmall{
+p.tineysmall{
 	 color: #ddd;
 	font-size: 1pt;
 }
@@ -89,4 +89,37 @@ p. tineysmall{
 @keyframes typewriter-caret {
     from { border-right-color: #212121; }
     to { border-right-color: transparent; }
+}
+/* about page */
+.about {
+    width: 0%;
+    color: #212121;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    border-right-color: #212121;
+    border-right-style: solid;
+    border-right-width: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .about {
+        font-size: 6em;
+    }
+}
+
+.about-typewriter {
+    animation-name: typewriter-about, typewriter-caret;
+    animation-duration: 2000ms, 700ms;
+    animation-iteration-count: 1, infinite;
+    animation-direction: normal, normal;
+    animation-timing-function: steps(5), linear;
+    animation-fill-mode:forwards;
+}
+
+@keyframes typewriter-about {
+    0% { width: 0%; }
+    100% { width: 100%; }
 }
