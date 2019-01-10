@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
 
     {% if page.title %}
     <title>openpnu • {{ page.title }}</title>
@@ -17,18 +18,14 @@
 </head>
 
 <body>
-    <div id="navbar">
-        <a href="/">Main</a>
-        <a href="/about">About</a>
-        <a href="#Members">Members</a>
-    </div>
+    {% include navbar.html %}
+
     {{ content }}
 
 	<script src="/assets/js/secretbutton.js"></script>
     <script src="/assets/js/jquery-3.3.1.min.js"></script>
     <script src="/assets/js/umd/popper.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/navbar.js"></script>
 </body>
 
 </html>
