@@ -34,11 +34,6 @@ body {
     animation-fill-mode: none, none, forwards;
 }
 
-p.tineysmall{
-	 color: #ddd;
-	font-size: 1pt;
-}
-
 @keyframes typewriter-head {
     0% { width: 0%; }
     100% { width: 57%; }
