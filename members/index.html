@@ -1,0 +1,46 @@
+---
+layout: default
+title: Members
+---
+
+<div class="container">
+    <div class="row">
+        {% for member in site.data.members %}
+        <div class="col-12">
+            <div class="card m-1">
+                <div class="card-body">
+                    <div class="media">
+                        <img class="img-thumbnail img-github-avatar mr-3" src="{{ member.avatar }}" alt="GitHub Avatar">
+                        <div class="media-body">
+                            <h3 class="card-title">
+                                {{ member.name }}
+                                {% if member.position %}
+                                <span class="badge badge-primary float-right">
+                                    {{ member.position }}
+                                </span>
+                                {% endif %}
+                            </h3>
+                            <div class="media mt-3">
+                                <div class="media-body">
+                                    <h5>Email</h5>
+                                    <a href="mailto:{{ member.email }}">
+                                        {{ member.email }}
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media mt-3">
+                                <div class="media-body">
+                                    <h5>GitHub</h5>
+                                    <a href="https://github.com/{{ member.github }}">
+                                        {{ member.github }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

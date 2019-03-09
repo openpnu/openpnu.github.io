@@ -86,3 +86,15 @@ body {
     0% { width: 0%; }
     100% { width: 100%; }
 }
+
+.img-github-avatar {
+    width: 64px;
+    height: 64px;
+}
+
+@media (min-width: 768px) {
+    .img-github-avatar {
+        width: 128px;
+        height: 128px;
+    }    
+}
