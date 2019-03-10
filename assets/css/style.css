@@ -98,3 +98,13 @@ body {
         height: 128px;
     }    
 }
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+    font-family: 'Nanum+Gothic', sans-serif;
+}
